@@ -1,0 +1,44 @@
+{
+  "name": "kickstart-react",
+  "version": "0.0.1",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/contentstack/kickstart-react"
+  },
+  "description": "Contentstack Kickstarts are the minimum amount of code needed to connect to Contentstack.",
+  "author": "Tim Benniks <tim.benniks@contentstack.com>",
+  "homepage": "https://contentstack.com",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@contentstack/delivery-sdk": "^4.7.1",
+    "@contentstack/live-preview-utils": "^3.2.4",
+    "@timbenniks/contentstack-endpoints": "^1.0.10",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "dompurify": "^3.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@tailwindcss/postcss": "^4.1.10",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "eslint": "^9.29.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "globals": "^16.2.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.34.1",
+    "vite": "^6.3.5"
+  }
+}
