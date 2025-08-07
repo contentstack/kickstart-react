@@ -10,11 +10,22 @@ export const stack = contentstack.stack({
   apiKey: import.meta.env.VITE_CONTENTSTACK_API_KEY as string,
   deliveryToken: import.meta.env.VITE_CONTENTSTACK_DELIVERY_TOKEN as string,
   environment: import.meta.env.VITE_CONTENTSTACK_ENVIRONMENT as string,
-  region,
+
+  // Setting the region
+  // if the region doesnt exist, fall back to a custom region given by the env vars
+  // for internal testing purposes at Contentstack we look for a custom region in the env vars, you do not have to do this.
+  region: region ? region : import.meta.env.VITE_CONTENTSTACK_REGION as any,
+
+  // Setting the host for content delivery based on the region or environment variables
+  // This is done for internal testing purposes at Contentstack, you can omit this if you have set a region above.
+  host: import.meta.env.VITE_CONTENTSTACK_CONTENT_DELIVERY || endpoints && endpoints.contentDelivery,
+
   live_preview: {
     enable: import.meta.env.VITE_CONTENTSTACK_PREVIEW === 'true',
     preview_token: import.meta.env.VITE_CONTENTSTACK_PREVIEW_TOKEN,
-    host: endpoints.preview
+    // Setting the host for live preview based on the region
+    // for internal testing purposes at Contentstack we look for a custom host in the env vars, you do not have to do this.
+    host: import.meta.env.VITE_CONTENTSTACK_PREVIEW_HOST || endpoints && endpoints.preview
   }
 });
 
@@ -29,7 +40,9 @@ export function initLivePreview() {
       environment: import.meta.env.VITE_CONTENTSTACK_ENVIRONMENT as string,
     },
     clientUrlParams: {
-      host: endpoints.application
+      // Setting the client URL parameters for live preview
+      // for internal testing purposes at Contentstack we look for a custom host in the env vars, you do not have to do this.
+      host: import.meta.env.VITE_CONTENTSTACK_CONTENT_APPLICATION || endpoints && endpoints.application
     },
     editButton: {
       enable: true,
