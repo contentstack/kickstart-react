@@ -17,6 +17,10 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "overrides": {
+    "lodash": "4.17.23",
+    "lodash-es": "4.17.23"
+  },
   "dependencies": {
     "@contentstack/delivery-sdk": "^4.10.6",
     "@contentstack/live-preview-utils": "^4.2.0",
