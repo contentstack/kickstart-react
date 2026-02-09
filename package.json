@@ -1,6 +1,6 @@
 {
   "name": "kickstart-react",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": false,
   "repository": {
     "type": "git",
@@ -16,6 +16,10 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+  },
+  "overrides": {
+    "lodash": "4.17.23",
+    "lodash-es": "4.17.23"
   },
   "dependencies": {
     "@contentstack/delivery-sdk": "^4.10.6",
