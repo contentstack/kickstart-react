@@ -27,7 +27,7 @@
     "@timbenniks/contentstack-endpoints": "^2.1.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "dompurify": "^3.3.1"
+    "dompurify": "^3.3.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.2",
