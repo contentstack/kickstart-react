@@ -1,6 +1,6 @@
 {
   "name": "kickstart-react",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": false,
   "repository": {
     "type": "git",
@@ -22,27 +22,27 @@
     "lodash-es": "4.17.23"
   },
   "dependencies": {
-    "@contentstack/delivery-sdk": "^4.10.6",
-    "@contentstack/live-preview-utils": "^4.2.0",
+    "@contentstack/delivery-sdk": "^5.1.2",
+    "@contentstack/live-preview-utils": "^4.2.1",
     "@timbenniks/contentstack-endpoints": "^2.1.0",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "dompurify": "^3.3.1"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "dompurify": "^3.3.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "@tailwindcss/postcss": "^4.1.18",
-    "@types/react": "^19.2.8",
+    "@eslint/js": "^9.39.4",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.2",
-    "eslint": "^9.39.2",
+    "@vitejs/plugin-react": "^5.2.0",
+    "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.26",
     "globals": "^17.0.0",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.18",
+    "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.52.0",
+    "typescript-eslint": "^8.57.1",
     "vite": "^7.3.1"
   }
 }
