@@ -25,7 +25,7 @@
     "@contentstack/delivery-sdk": "^5.1.2",
     "@contentstack/live-preview-utils": "^4.3.0",
     "@timbenniks/contentstack-endpoints": "^2.1.0",
-    "dompurify": "^3.3.3",
+    "dompurify": "^3.4.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
