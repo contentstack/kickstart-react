@@ -27,7 +27,7 @@
     "@contentstack/delivery-sdk": "^5.5.2",
     "@contentstack/live-preview-utils": "^4.4.5",
     "@contentstack/utils": "^1.9.1",
-    "dompurify": "^3.4.13",
+    "dompurify": "^3.4.16",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
